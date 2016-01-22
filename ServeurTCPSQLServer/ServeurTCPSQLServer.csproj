@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43A808E6-C5AF-4CCB-89E4-786F194B2B8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestServeurTCPSQLServer</RootNamespace>
+    <AssemblyName>TestServeurTCPSQLServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLG_AccesBD, Version=2.1.2.28500, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ressources\CLG_AccesBD.dll</HintPath>
+    </Reference>
+    <Reference Include="clg_dll_TypeTCPBase, Version=3.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ressources\clg_dll_TypeTCPBase.dll</HintPath>
+    </Reference>
+    <Reference Include="clg_Reflexion">
+      <HintPath>..\ressources\clg_Reflexion.dll</HintPath>
+    </Reference>
+    <Reference Include="dll_Log4Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ressources\dll_Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ressources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDD\clg_ChargementBase.cs" />
+    <Compile Include="BDD\clg_Controleur.cs" />
+    <Compile Include="BDD\clg_ConvertDonneesSQL.cs" />
+    <Compile Include="clg_ExporteObjetsCSV.cs" />
+    <Compile Include="clg_GereCompteurs.cs" />
+    <Compile Include="BDD\clg_Modele.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_ACT_ACTION.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_AGENT_ICEDA.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CALER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CHZ_CHOOZ.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CLS_COLIS.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_COMPOSER_DOCUMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_COMPOSITION_RADIOELEMENTS.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_COMPTEUR.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CONTROLE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CONTROLER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CONTROLER_SAISIE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_COULER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_COU_COULIS.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CRA_CRAYON.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CTA_CONTROLE_ATTENDU.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_CTR_CONTROLE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DCO_DOCUMENT_COULIS.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DCT_DOCUMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DDR_DOCUMENT_DRA.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DEFINIR_TYPE_DECHET.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DEPLACER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_DSP_DOCUMENT_SPECTRO.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_EMI_EMBALLAGE_IP2.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_EMP_EMPLACEMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_EMT_EMBALLAGE_DE_TRANSPORT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_EPS_EMPLACEMENT_PUITS_STOCKAGE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_ETU_ETUI.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_FNC_FICHE_NON_CONFORMITE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_GROUPER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_GROUPER_ACTION.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HID_HISTORIQUE_DOCUMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HIE_HISTORIQUE_EMPLACEMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HIL_HISTORIQUE_LOCAL.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HIM_HISTORIQUE_MOUVEMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HIP_HISTORIQUE_PUISSANCETHERMIQUE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_HISTORISER_PUISSANCETHERMIQUE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_INF_INFORMATION.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_LCL_LOCAL.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_MUT_MUTUALISATION.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_PAN_PANIER.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_PAR_CARACTERISTIQUE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_PROFIL.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_PUS_PUITS_STOCKAGE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_PUT_PUISSANCE_THERMIQUE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_RAD_RADIO_ELEMENT.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SAISIR.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SIE_SITE_EXUTOIRE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SORTIR.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SPR_SITE_PRODUCTEUR.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SQA_SEQUENCE_ACTION.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_SRE_SURREMBALLAGE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_TN_TN.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_TYC_TYPE_CONTROLE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_TYD_TYPE__DECHET.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_TYV_TYPE_VARIABLE.cs" />
+    <Compile Include="BDD\Controleurs\clg_CTL_VER_VERIFICATION_CONTROLE.cs" />
+    <Compile Include="frmLanceServeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanceServeur.Designer.cs">
+      <DependentUpon>frmLanceServeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDD\Modeles\clg_ACT_ACTION.cs" />
+    <Compile Include="BDD\Modeles\clg_AGENT_ICEDA.cs" />
+    <Compile Include="BDD\Modeles\clg_CHZ_CHOOZ.cs" />
+    <Compile Include="BDD\Modeles\clg_CLS_COLIS.cs" />
+    <Compile Include="BDD\Modeles\clg_COMPTEUR.cs" />
+    <Compile Include="BDD\Modeles\clg_COU_COULIS.cs" />
+    <Compile Include="BDD\Modeles\clg_CRA_CRAYON.cs" />
+    <Compile Include="BDD\Modeles\clg_CTA_CONTROLE_ATTENDU.cs" />
+    <Compile Include="BDD\Modeles\clg_CTR_CONTROLE.cs" />
+    <Compile Include="BDD\Modeles\clg_DCO_DOCUMENT_COULIS.cs" />
+    <Compile Include="BDD\Modeles\clg_DCT_DOCUMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_DDR_DOCUMENT_DRA.cs" />
+    <Compile Include="BDD\Modeles\clg_DEPLACER.cs" />
+    <Compile Include="BDD\Modeles\clg_DSP_DOCUMENT_SPECTRO.cs" />
+    <Compile Include="BDD\Modeles\clg_EMI_EMBALLAGE_IP2.cs" />
+    <Compile Include="BDD\Modeles\clg_EMP_EMPLACEMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_EMT_EMBALLAGE_DE_TRANSPORT.cs" />
+    <Compile Include="BDD\Modeles\clg_EPS_EMPLACEMENT_PUITS_STOCKAGE.cs" />
+    <Compile Include="BDD\Modeles\clg_ETU_ETUI.cs" />
+    <Compile Include="BDD\Modeles\clg_FNC_FICHE_NON_CONFORMITE.cs" />
+    <Compile Include="BDD\Modeles\clg_GROUPER.cs" />
+    <Compile Include="BDD\Modeles\clg_HID_HISTORIQUE_DOCUMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_HIE_HISTORIQUE_EMPLACEMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_HIL_HISTORIQUE_LOCAL.cs" />
+    <Compile Include="BDD\Modeles\clg_HIM_HISTORIQUE_MOUVEMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_HIP_HISTORIQUE_PUISSANCETHERMIQUE.cs" />
+    <Compile Include="BDD\Modeles\clg_INF_INFORMATION.cs" />
+    <Compile Include="BDD\Modeles\clg_LCL_LOCAL.cs" />
+    <Compile Include="BDD\Modeles\clg_MUT_MUTUALISATION.cs" />
+    <Compile Include="BDD\Modeles\clg_PAN_PANIER.cs" />
+    <Compile Include="BDD\Modeles\clg_PAR_CARACTERISTIQUE.cs" />
+    <Compile Include="BDD\Modeles\clg_PROFIL.cs" />
+    <Compile Include="BDD\Modeles\clg_PUS_PUITS_STOCKAGE.cs" />
+    <Compile Include="BDD\Modeles\clg_PUT_PUISSANCE_THERMIQUE.cs" />
+    <Compile Include="BDD\Modeles\clg_RAD_RADIO_ELEMENT.cs" />
+    <Compile Include="BDD\Modeles\clg_SIE_SITE_EXUTOIRE.cs" />
+    <Compile Include="BDD\Modeles\clg_SORTIR.cs" />
+    <Compile Include="BDD\Modeles\clg_SPR_SITE_PRODUCTEUR.cs" />
+    <Compile Include="BDD\Modeles\clg_SQA_SEQUENCE_ACTION.cs" />
+    <Compile Include="BDD\Modeles\clg_SRE_SURREMBALLAGE.cs" />
+    <Compile Include="BDD\Modeles\clg_TN_TN.cs" />
+    <Compile Include="BDD\Modeles\clg_TYC_TYPE_CONTROLE.cs" />
+    <Compile Include="BDD\Modeles\clg_TYD_TYPE__DECHET.cs" />
+    <Compile Include="BDD\Modeles\clg_TYV_TYPE_VARIABLE.cs" />
+    <Compile Include="BDD\Modeles\clg_VER_VERIFICATION_CONTROLE.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLanceServeur.resx">
+      <DependentUpon>frmLanceServeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dll_ServeurTCPSQLServer\dll_ServeurTCPSQLServer.csproj">
+      <Project>{9beb4a1d-2770-4d44-a465-593569429690}</Project>
+      <Name>dll_ServeurTCPSQLServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

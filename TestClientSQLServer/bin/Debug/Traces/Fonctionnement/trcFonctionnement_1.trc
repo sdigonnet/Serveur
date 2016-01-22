@@ -1,0 +1,36 @@
+1|06/01/2016 17:27:44|000|1|System.Void .ctor(System.String, Int32)|A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.1:13000(   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at clg_dll_TypeTCPBase.clg_ClientTCP.Connecter(String pAdresseServeur, Int32 pPort))
+0|11/01/2016 17:09:31|421|1|clg_clientTCP.Connecter|Client connecté
+0|11/01/2016 17:10:23|421|1|clg_clientTCP.Connecter|Client connecté
+0|13/01/2016 15:55:19|468|1|clg_clientTCP.Connecter|Client connecté
+0|13/01/2016 15:59:08|578|1|clg_clientTCP.Connecter|Client connecté
+0|13/01/2016 16:02:16|093|1|clg_clientTCP.Connecter|Client connecté
+1|13/01/2016 16:02:49|406|2|clg_messageIP.Recupmessage|Erreur lors de la récupération du message : TimeOut  Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+1|13/01/2016 16:02:49|453|3|clg_dll_TypeTCPBase.Void c_timerSDV_Elapsed(System.Object, System.Timers.ElapsedEventArgs)|Object reference not set to an instance of an object.(   at clg_dll_TypeTCPBase.clg_ClientTCP.c_timerSDV_Elapsed(Object sender, ElapsedEventArgs e))
+1|13/01/2016 16:02:58|890|1|System.Void .ctor(System.String, Int32)|No connection could be made because the target machine actively refused it 127.0.0.1:30150(   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at clg_dll_TypeTCPBase.clg_ClientTCP.Connecter(String pAdresseServeur, Int32 pPort))
+0|13/01/2016 16:03:21|734|1|clg_clientTCP.Connecter|Client connecté
+1|14/01/2016 11:29:01|906|1|System.Void .ctor(System.String, Int32)|No connection could be made because the target machine actively refused it 127.0.0.1:30150(   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at clg_dll_TypeTCPBase.clg_ClientTCP.Connecter(String pAdresseServeur, Int32 pPort))
+1|14/01/2016 11:42:24|140|1|System.Void .ctor(System.String, Int32)|No connection could be made because the target machine actively refused it 127.0.0.1:30150(   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at clg_dll_TypeTCPBase.clg_ClientTCP.Connecter(String pAdresseServeur, Int32 pPort))
+0|14/01/2016 12:22:32|390|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:16:50|421|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:26:39|796|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:27:18|718|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:27:25|312|2|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:28:25|093|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 16:30:05|796|1|clg_clientTCP.Connecter|Client connecté
+1|14/01/2016 16:30:37|093|2|clg_messageIP.Recupmessage|Erreur lors de la récupération du message : TimeOut  Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+1|14/01/2016 16:30:37|140|3|clg_dll_TypeTCPBase.Void c_timerSDV_Elapsed(System.Object, System.Timers.ElapsedEventArgs)|Object reference not set to an instance of an object.(   at clg_dll_TypeTCPBase.clg_ClientTCP.c_timerSDV_Elapsed(Object sender, ElapsedEventArgs e))
+0|14/01/2016 16:32:44|062|1|clg_clientTCP.Connecter|Client connecté
+0|14/01/2016 17:24:05|078|1|clg_clientTCP.Connecter|Client connecté
+1|14/01/2016 17:24:25|109|2|clg_messageIP.Recupmessage|Erreur lors de la récupération du message : TimeOut  Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+1|14/01/2016 17:24:25|140|3|clg_dll_TypeTCPBase.Void c_timerSDV_Elapsed(System.Object, System.Timers.ElapsedEventArgs)|Object reference not set to an instance of an object.(   at clg_dll_TypeTCPBase.clg_ClientTCP.c_timerSDV_Elapsed(Object sender, ElapsedEventArgs e))
+0|22/01/2016 14:47:38|062|1|clg_clientTCP.Connecter|Client connecté
+1|22/01/2016 14:48:31|000|2|clg_messageIP.Recupmessage|Erreur lors de la récupération du message : TimeOut  Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+1|22/01/2016 14:48:31|093|3|clg_dll_TypeTCPBase.clg_dll_TypeTCPBase.clg_ResultatRequete ExecuteRequete(System.String)|Object reference not set to an instance of an object.(   at clg_dll_TypeTCPBase.clg_ClientTCP.ExecuteRequete(String pOrdreSQL))
+0|22/01/2016 17:55:47|265|1|clg_clientTCP.Connecter|Client connecté
+0|22/01/2016 18:01:11|203|1|clg_clientTCP.Connecter|Client connecté
+1|22/01/2016 18:01:41|515|2|clg_messageIP.Recupmessage|Erreur lors de la récupération du message : TimeOut  Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+0|22/01/2016 18:02:22|812|3|clg_clientTCP.Connecter|Client connecté

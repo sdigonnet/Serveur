@@ -1,0 +1,8 @@
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\bin\Debug\dll_ServeurTCPSQLServer.dll
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\bin\Debug\dll_ServeurTCPSQLServer.pdb
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\bin\Debug\CLG_AccesBD.dll
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\bin\Debug\clg_dll_TypeTCPBase.dll
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\bin\Debug\log4net.dll
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\obj\Debug\dll_ServeurTCPSQLServer.dll
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\obj\Debug\dll_ServeurTCPSQLServer.pdb
+D:\boulot\Iceda\Serveur\dll_ServeurTCPSQLServer\obj\Debug\dll_ServeurTCPSQLServer.csprojResolveAssemblyReference.cache

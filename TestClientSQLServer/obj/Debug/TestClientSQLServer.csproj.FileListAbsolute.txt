@@ -1,0 +1,25 @@
+C:\Users\Sylvain\AppData\Local\Temporary Projects\TestClientSQLServer\bin\Debug\TestClientSQLServer.exe.config
+D:\boulot\Outils\TestClientSQLServer\bin\Debug\TestClientSQLServer.exe.config
+D:\boulot\Outils\TestClientSQLServer\bin\Debug\TestClientSQLServer.exe
+D:\boulot\Outils\TestClientSQLServer\bin\Debug\TestClientSQLServer.pdb
+D:\boulot\Outils\TestClientSQLServer\bin\Debug\clg_dll_TypeTCPBase.dll
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.csprojResolveAssemblyReference.cache
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.Properties.Resources.resources
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.csproj.GenerateResource.Cache
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.exe
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.pdb
+D:\boulot\Outils\TestClientSQLServer\obj\Debug\TestClientSQLServer.frmClientSQLServer.resources
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\TestClientSQLServer.exe.config
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.exe
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.pdb
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.csprojResolveAssemblyReference.cache
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.frmClientSQLServer.resources
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.Properties.Resources.resources
+D:\boulot\Iceda\Serveur\TestClientSQLServer\obj\Debug\TestClientSQLServer.csproj.GenerateResource.Cache
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\TestClientSQLServer.exe
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\TestClientSQLServer.pdb
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\clg_dll_TypeTCPBase.dll
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\dll_ServeurTCPSQLServer.dll
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\CLG_AccesBD.dll
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\log4net.dll
+D:\boulot\Iceda\Serveur\TestClientSQLServer\bin\Debug\dll_ServeurTCPSQLServer.pdb
